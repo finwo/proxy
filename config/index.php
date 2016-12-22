@@ -4,7 +4,7 @@ $config = array();
 
 // First load yml files
 foreach (glob(__DIR__ . '/**.yml') as $file) {
-    $config = array_merge($config, \Spyc::YAMLLoad($file));
+    $config = array_merge_recursive($config, \Spyc::YAMLLoad($file));
 }
 
 $blacklist = array(
@@ -17,7 +17,7 @@ foreach (glob(__DIR__ . '/**.php') as $file) {
             continue 2;
         }
     }
-    $config = array_merge($config, require($file));
+    $config = array_merge_recursive($config, require($file));
 }
 
 if (isset($config['_ENV'])) {
