@@ -1,0 +1,20 @@
+{
+  "name": "finwo/proxy",
+  "authors": [
+    {
+      "name": "Robin Bron",
+      "email": "robin@finwo.nl"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "ext/all.php"
+    ],
+    "psr-4": { "": "src/" }
+  },
+  "require": {
+    "mustangostang/spyc": "^0.6.1",
+    "finwo/property-accessor": "^0.1.4",
+    "jakeasmith/http_build_url": "^1.0"
+  }
+}
