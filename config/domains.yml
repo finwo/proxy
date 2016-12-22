@@ -1,4 +1,4 @@
 domains:
-  images.islive.robin:
-    scheme: http
-    host: images.islive.nl
+  google.example:
+    scheme: https
+    host: google.nl
